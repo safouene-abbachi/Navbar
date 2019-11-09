@@ -1,0 +1,54 @@
+.menu {
+  display: flex;
+}
+.choices {
+  margin: 50px;
+  list-style: none;
+  padding: 15px;
+  border-left: 1.5px solid #e9ebee;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 2px solid #f8d14faf;
+  justify-content: flex-end;
+  padding: 0 20px;
+  margin: 0;
+}
+
+.choices a,
+.choices a:visited {
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+}
+.sub_menu {
+  display: none;
+  position: absolute;
+  background-color: #1cdaa181;
+  width: 200px;
+  height: 200px;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+.sub_menu a {
+  padding: 10px 15px;
+  border-bottom: 1.5px solid #4b10a583;
+  display: block;
+}
+.choices:hover .sub_menu {
+  display: block;
+  color: black;
+}
+.choices a:hover,
+.choices a:active {
+  color: red;
+}
+.sub_menu li {
+  display: block;
+  text-decoration: none;
+  padding: 0.25em;
+}
